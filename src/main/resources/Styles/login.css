@@ -1,0 +1,200 @@
+.login_container {
+    -fx-background-color: #EEEEEE;
+}
+
+/* Logo Container Styles */
+.login_logo_container {
+    -fx-background-color: #132A13;
+    -fx-alignment: center;
+}
+
+.login_logo_container Text {
+    -fx-font-size: 2em;
+    -fx-fill: #FFFFFF;
+}
+
+.login_logo_container FontAwesomeIconView {
+    -fx-fill: #ECF39E;
+}
+
+/* Account Selector Choice Box Styles */
+.account_selector {
+    -fx-background-color: #ECF39E;
+
+}
+
+.account_selector .label {
+    -fx-text-fill: #132A13;
+    -fx-font-size: 1.1em;
+}
+
+.account_selector .arrow {
+    -fx-background-color: #ECF39E;
+
+}
+
+#choice-box-popup-menu {
+    -fx-background-color: #ECF39E;
+}
+
+#choice-prompt-text {
+    -fx-font-weight: 400;
+}
+
+/* Login Container Area */
+
+.login_form_container {
+    -fx-spacing: 15;
+    -fx-alignment: top_left;
+}
+
+.login_form_container Label {
+    -fx-font-size: 1.1em;
+    -fx-font-weight: bold;
+}
+
+.input_field {
+    -fx-background-color: #FFFFFF;
+    -fx-pref-height: 35;
+    -fx-font-size: 1.2em;
+}
+
+.login_form_container Button {
+    -fx-background-color: #132A13;
+    -fx-text-fill: #FFFFFF;
+    -fx-pref-width: 350;
+    -fx-pref-height: 30;
+    -fx-font-size: 1.2em;
+}
+
+.login_form_container Button:hover {
+    -fx-cursor: hand;
+}
+
+.error_lbl {
+    -fx-text-fill: #FF0000;
+}
+
+
+
+
+
+/* Login Container - Light green background */
+.login_container {
+    -fx-background-color: linear-gradient(to bottom, #F5FBF5, #E8F5E8); /* Soft green gradient */
+}
+
+/* Logo Container - Dark green header */
+.login_logo_container {
+    -fx-background-color: linear-gradient(to right, #0F9D58, #1B5E20); /* Modern green gradient */
+    -fx-alignment: center;
+    -fx-padding: 20;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 10, 0, 0, 5);
+}
+
+.login_logo_container Text {
+    -fx-font-size: 2.2em;
+    -fx-fill: #FFFFFF;
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-font-weight: 300;
+}
+
+.login_logo_container FontAwesomeIconView {
+    -fx-fill: #C8E6C9; /* Soft mint green */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 5, 0, 0, 1);
+}
+
+/* Account Selector - Modern combo box */
+.account_selector {
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 5;
+    -fx-border-color: #C8E6C9;
+    -fx-border-radius: 5;
+    -fx-border-width: 1.5;
+    -fx-padding: 5;
+}
+
+.account_selector .label {
+    -fx-text-fill: #2E7D32; /* Dark green */
+    -fx-font-size: 1.1em;
+    -fx-font-family: "Segoe UI", sans-serif;
+}
+
+.account_selector .arrow {
+    -fx-background-color: #2E7D32;
+}
+
+#choice-box-popup-menu {
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #C8E6C9;
+    -fx-border-width: 1;
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+}
+
+/* Login Form - Clean white card */
+.login_form_container {
+    -fx-spacing: 20;
+    -fx-alignment: top_center;
+    -fx-padding: 30;
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 10;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.05), 8, 0, 0, 3);
+}
+
+.login_form_container Label {
+    -fx-font-size: 1.2em;
+    -fx-text-fill: #2E7D32;
+    -fx-font-family: "Segoe UI Semibold", sans-serif;
+}
+
+.input_field {
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 5;
+    -fx-border-color: #C8E6C9;
+    -fx-border-radius: 5;
+    -fx-border-width: 1.5;
+    -fx-pref-height: 40;
+    -fx-font-size: 1.2em;
+    -fx-padding: 8;
+    -fx-effect: innershadow(gaussian, rgba(0,0,0,0.05), 3, 0, 0, 1);
+}
+
+.input_field:focused {
+    -fx-border-color: #0F9D58;
+    -fx-effect: dropshadow(gaussian, rgba(15,157,88,0.1), 5, 0, 0, 2);
+}
+
+.login_form_container Button {
+    -fx-background-color: linear-gradient(to right, #0F9D58, #00C853);
+    -fx-text-fill: #FFFFFF;
+    -fx-pref-width: 380;
+    -fx-pref-height: 45;
+    -fx-font-size: 1.3em;
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-background-radius: 5;
+    -fx-effect: dropshadow(gaussian, rgba(15,157,88,0.3), 5, 0, 0, 3);
+    -fx-cursor: hand;
+    -fx-transition: all 0.3s;
+}
+
+.login_form_container Button:hover {
+    -fx-background-color: linear-gradient(to right, #0E8E4E, #00B84A);
+    -fx-effect: dropshadow(gaussian, rgba(15,157,88,0.4), 7, 0, 0, 4);
+    -fx-translate-y: -1;
+}
+
+.error_lbl {
+    -fx-text-fill: #E53935; /* Modern red */
+    -fx-font-size: 1.1em;
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-alignment: center;
+}
+
+
+
+
+
+
+
+

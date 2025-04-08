@@ -1,0 +1,203 @@
+/* Root Dashboard - Light theme with subtle gradient */
+.dashboard {
+    -fx-background-color: linear-gradient(to bottom, #F5F7FA, #E4E8EB);
+
+}
+
+/* User Name - More modern font and weight */
+.user_name {
+    -fx-font-size: 2.6em;
+    -fx-font-family: "Segoe UI", "Roboto", sans-serif;
+    -fx-font-weight: 300;
+    -fx-text-fill: #2D3748; /* Dark gray for better readability */
+}
+
+/* Data Labels - Subtle but clearer */
+.data_lbl {
+    -fx-text-fill: #718096; /* Soft gray */
+    -fx-font-size: 1.1em;
+    -fx-font-family: "Segoe UI", sans-serif;
+}
+
+/* Accounts View - Card-based modern design */
+.accounts_view {
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 12;
+    -fx-padding: 15;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.1), 10, 0, 0, 5);
+    -fx-border-color: transparent;
+}
+
+/* Account Cards - Sleek gradient & hover effect */
+.account {
+    -fx-background-radius: 10;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.1), 8, 0, 0, 4);
+    -fx-cursor: hand;
+    -fx-transition: all 0.3s;
+}
+
+.account:hover {
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 12, 0, 0, 6);
+    -fx-translate-y: -2;
+}
+
+.account_gradient {
+    -fx-background-color: linear-gradient(to right, #4E54C8, #8F94FB); /* Modern purple gradient */
+}
+
+.account_balance {
+    -fx-text-fill: #FFFFFF;
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-font-size: 2.8em;
+    -fx-font-weight: 600;
+}
+
+.account_number {
+    -fx-text-fill: rgba(255, 255, 255, 0.9);
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-font-size: 1.3em;
+}
+
+/* Section Titles - Cleaner typography */
+.section_title {
+    -fx-font-size: 1.5em;
+    -fx-font-family: "Segoe UI Semibold", sans-serif;
+    -fx-text-fill: #2D3748;
+}
+
+/* Summary View - Modern bordered container */
+.summary_view {
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 10;
+    -fx-padding: 15;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.05), 6, 0, 0, 2);
+}
+
+.acc_summary_container {
+    -fx-padding: 15;
+    -fx-spacing: 12;
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+    -fx-border-color: #E2E8F0; /* Soft border */
+    -fx-border-width: 1;
+}
+
+/* Income/Expense Amounts - Better contrast */
+.income_amount {
+    -fx-text-fill: #38A169; /* Green (softer) */
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-font-size: 1.5em;
+    -fx-font-weight: 600;
+}
+
+.expense_amount {
+    -fx-text-fill: #E53E3E; /* Red (softer) */
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-font-size: 1.5em;
+    -fx-font-weight: 600;
+}
+
+/* Transaction List - Minimalist scrollable list */
+.transaction_listview {
+    -fx-background-color: transparent;
+    -fx-border-width: 0;
+    -fx-padding: 5;
+}
+
+.transaction_listview .list-cell {
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 8;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.05), 3, 0, 0, 1);
+    -fx-margin: 0 0 8 0;
+    -fx-padding: 12;
+}
+
+.transaction_listview .list-cell:filled:hover {
+    -fx-background-color: #F7FAFC;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.1), 5, 0, 0, 2);
+}
+
+/* Send Money Form - Clean input fields */
+.new_trans_container {
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 12;
+    -fx-padding: 20;
+    -fx-spacing: 15;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.1), 8, 0, 0, 4);
+}
+
+.new_trans_container TextField {
+    -fx-pref-height: 45;
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 6;
+    -fx-border-color: #E2E8F0;
+    -fx-border-radius: 6;
+    -fx-border-width: 1;
+    -fx-padding: 10;
+    -fx-font-size: 1.1em;
+}
+
+.new_trans_container TextField:focused {
+    -fx-border-color: #4E54C8;
+    -fx-effect: dropshadow(three-pass-box, rgba(78, 84, 200, 0.2), 5, 0, 0, 2);
+}
+
+.new_trans_container Button {
+    -fx-background-color: linear-gradient(to right, #4E54C8, #8F94FB);
+    -fx-background-radius: 6;
+    -fx-pref-width: 240;
+    -fx-pref-height: 50;
+    -fx-font-size: 1.4em;
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-text-fill: #FFFFFF;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.1), 5, 0, 0, 3);
+}
+
+.new_trans_container Button:hover {
+    -fx-background-color: linear-gradient(to right, #4348B0, #7A7FE6);
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.15), 7, 0, 0, 4);
+}
+
+
+/* Root Dashboard - Light green theme */
+.dashboard {
+    -fx-background-color: linear-gradient(to bottom, #F0F9F0, #E0F2E0); /* Soft green gradient */
+}
+
+/* Account Cards - Green gradients */
+.account_gradient {
+    -fx-background-color: linear-gradient(to right, #0F9D58, #00C853);
+    /* Deep green to vibrant green (Material Design colors) */
+}
+
+/* Send Money Button - Green CTA */
+.new_trans_container Button {
+    -fx-background-color: linear-gradient(to right, #0F9D58, #00C853);
+    -fx-effect: dropshadow(three-pass-box, rgba(15, 157, 88, 0.3), 5, 0, 0, 3);
+}
+
+.new_trans_container Button:hover {
+    -fx-background-color: linear-gradient(to right, #0E8E4E, #00B84A);
+}
+
+/* Focused Input Fields - Green accent */
+.new_trans_container TextField:focused {
+    -fx-border-color: #0F9D58;
+    -fx-effect: dropshadow(three-pass-box, rgba(15, 157, 88, 0.2), 5, 0, 0, 2);
+}
+
+/* Income Amount - Darker green for hierarchy */
+.income_amount {
+    -fx-text-fill: #0F9D58;
+}
+
+/* Section Titles - Green-tinged dark gray */
+.section_title {
+    -fx-text-fill: #1E3F1E; /* Dark forest green */
+}
+
+/* Transaction List Hover - Green tint */
+.transaction_listview .list-cell:filled:hover {
+    -fx-background-color: #F0F9F0;
+}
